@@ -22,38 +22,45 @@ class RegisterFormViewController: UIViewController {
     @IBOutlet weak var textFieldPhone: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
     
-    var array = ["- Datos Ingresados -"]
-    
     @IBOutlet weak var tableRegister: UITableView!
+    
+    var array: [ContentTable] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableRegister.delegate = self
         tableRegister.dataSource = self
-
-        // Do any additional setup after loading the view.
+    }
+    
+    private func goTo(content: ContentTable) {
+        guard let detailViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+            fatalError("Unable to instantiate Detail Controller")
+        }
+        
+        detailViewController.contentTable = content
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     @IBAction func sendForm(_ sender: Any) {
         let valueFirstName: String = textFieldFirstName.text ?? ""
         labelFirstName.text = "Nombre: " + valueFirstName
-        array.append("Nombre: " + valueFirstName)
+        array.append( ContentTable(keyName: "Nombre:", valueName: valueFirstName) )
         
         let valueLastName: String = textFieldLastName.text ?? ""
         labelLastName.text = "Apellido: " + valueLastName
-        array.append("Apellido: " + valueLastName)
+        array.append( ContentTable(keyName: "Apellido:", valueName: valueLastName) )
         
         let valueAge: String = textFieldAge.text ?? ""
         labelAge.text = "Edad: " + valueAge
-        array.append("Edad: " + valueAge)
+        array.append( ContentTable(keyName: "Edad:", valueName: valueAge) )
         
         let valuePhone: String = textFieldPhone.text ?? ""
         labelPhone.text = "Teléfono: " + valuePhone
-        array.append("Teléfono: " + valuePhone)
+        array.append( ContentTable(keyName: "Teléfono:", valueName: valuePhone) )
         
         let valuePassword: String = textFieldPassword.text ?? ""
         labelPassword.text = "Contraseña: " + valuePassword
-        array.append("Contraseña: " + valuePassword)
+        array.append( ContentTable(keyName: "Contraseña:", valueName: valuePassword) )
         
         tableRegister.reloadData()
     }
@@ -77,7 +84,22 @@ extension RegisterFormViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "name", for: indexPath) as! TableCellView
-        cell.labelCell.text = array[indexPath.row]
+        cell.labelCellKey.text = array[indexPath.row].keyName
+        cell.labelCellValue.text = array[indexPath.row].valueName
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        goTo(content: array[indexPath.row])
+    }
+}
+
+struct ContentTable {
+    var keyName: String
+    var valueName: String
+    
+    init(keyName: String, valueName: String) {
+        self.keyName = keyName
+        self.valueName = valueName
     }
 }
