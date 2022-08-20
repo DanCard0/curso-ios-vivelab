@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4223CB2E28B056F200374C79 /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4223CB2D28B056F200374C79 /* RegisterFormViewController.swift */; };
+		4223CB3028B06E2900374C79 /* TableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4223CB2F28B06E2900374C79 /* TableCellView.swift */; };
 		42E0234D28A7E0770038164A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0234C28A7E0770038164A /* AppDelegate.swift */; };
 		42E0234F28A7E0770038164A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0234E28A7E0770038164A /* SceneDelegate.swift */; };
 		42E0235128A7E0770038164A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E0235028A7E0770038164A /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4223CB2D28B056F200374C79 /* RegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
+		4223CB2F28B06E2900374C79 /* TableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellView.swift; sourceTree = "<group>"; };
 		42E0234928A7E0770038164A /* SampleUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E0234C28A7E0770038164A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42E0234E28A7E0770038164A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				42E0234E28A7E0770038164A /* SceneDelegate.swift */,
 				42E0235028A7E0770038164A /* ViewController.swift */,
 				42E0235228A7E0770038164A /* Main.storyboard */,
+				4223CB2F28B06E2900374C79 /* TableCellView.swift */,
+				4223CB2D28B056F200374C79 /* RegisterFormViewController.swift */,
 				42E0235528A7E0790038164A /* Assets.xcassets */,
 				42E0235728A7E0790038164A /* LaunchScreen.storyboard */,
 				42E0235A28A7E0790038164A /* Info.plist */,
@@ -202,6 +208,8 @@
 			files = (
 				42E0235128A7E0770038164A /* ViewController.swift in Sources */,
 				42E0234D28A7E0770038164A /* AppDelegate.swift in Sources */,
+				4223CB3028B06E2900374C79 /* TableCellView.swift in Sources */,
+				4223CB2E28B056F200374C79 /* RegisterFormViewController.swift in Sources */,
 				42E0234F28A7E0770038164A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
