@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427868CE28BA623A00E9873D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427868CD28BA623A00E9873D /* Models.swift */; };
+		427868D028BA84D500E9873D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427868CF28BA84D500E9873D /* CustomTableViewCell.swift */; };
 		429D850428B99EDB00202D04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D850328B99EDB00202D04 /* AppDelegate.swift */; };
 		429D850628B99EDB00202D04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D850528B99EDB00202D04 /* SceneDelegate.swift */; };
 		429D850828B99EDB00202D04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429D850728B99EDB00202D04 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		0AE42B097AB2193F6BF46D45 /* Pods_SampleCocoapodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleCocoapodsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427868CD28BA623A00E9873D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = SOURCE_ROOT; };
+		427868CF28BA84D500E9873D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		429D850028B99EDB00202D04 /* SampleCocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCocoapods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429D850328B99EDB00202D04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		429D850528B99EDB00202D04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 		429D850228B99EDB00202D04 /* SampleCocoapods */ = {
 			isa = PBXGroup;
 			children = (
+				427868CD28BA623A00E9873D /* Models.swift */,
 				429D850328B99EDB00202D04 /* AppDelegate.swift */,
 				429D850528B99EDB00202D04 /* SceneDelegate.swift */,
 				429D850728B99EDB00202D04 /* ViewController.swift */,
@@ -107,6 +112,7 @@
 				429D850C28B99EDD00202D04 /* Assets.xcassets */,
 				429D850E28B99EDD00202D04 /* LaunchScreen.storyboard */,
 				429D851128B99EDD00202D04 /* Info.plist */,
+				427868CF28BA84D500E9873D /* CustomTableViewCell.swift */,
 			);
 			path = SampleCocoapods;
 			sourceTree = "<group>";
@@ -128,7 +134,6 @@
 				F7F2C359AAF8D15147A0DD31 /* Pods-SampleCocoapodsTests.debug.xcconfig */,
 				A09C6AC2EB1565D7FDBA4206 /* Pods-SampleCocoapodsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -301,8 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				429D850828B99EDB00202D04 /* ViewController.swift in Sources */,
+				427868D028BA84D500E9873D /* CustomTableViewCell.swift in Sources */,
 				429D850428B99EDB00202D04 /* AppDelegate.swift in Sources */,
 				429D850628B99EDB00202D04 /* SceneDelegate.swift in Sources */,
+				427868CE28BA623A00E9873D /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

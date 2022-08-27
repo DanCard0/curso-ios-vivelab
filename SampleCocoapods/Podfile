@@ -7,6 +7,7 @@ target 'SampleCocoapods' do
 
   # Pods for SampleCocoapods
     pod 'Alamofire','4.9.1'
+    pod 'AlamofireImage', '~> 3.6.0'
 
   target 'SampleCocoapodsTests' do
     inherit! :search_paths
